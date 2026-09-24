@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --preto: #0e0e0d;
+  --preto-soft: #18160f;
+  --creme: #faf7f0;
+  --creme-dark: #efe6d3;
+  --dourado: #c9a35c;
+  --dourado-claro: #e3c68a;
+  --verde: #3f5c3a;
+  --verde-fundo: #24361f;
+  --verde-sage: #93a889;
+  --ease-studio: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@theme inline {
+  --color-preto: var(--preto);
+  --color-preto-soft: var(--preto-soft);
+  --color-creme: var(--creme);
+  --color-creme-dark: var(--creme-dark);
+  --color-dourado: var(--dourado);
+  --color-dourado-claro: var(--dourado-claro);
+  --color-verde: var(--verde);
+  --color-verde-fundo: var(--verde-fundo);
+  --color-verde-sage: var(--verde-sage);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+}
+
+* {
+  scrollbar-color: var(--dourado) transparent;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background: var(--creme);
+  color: var(--preto);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+/* Piso xadrez do estúdio, usado como textura sutil em algumas seções */
+.textura-xadrez {
+  background-image:
+    linear-gradient(45deg, var(--preto) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--preto) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--preto) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--preto) 75%);
+  background-size: 48px 48px;
+  background-position: 0 0, 0 24px, 24px -24px, -24px 0px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
