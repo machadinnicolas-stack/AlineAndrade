@@ -55,7 +55,7 @@ export function About() {
             por trás do Curso Liso Perfeito — hoje ensinado a outras profissionais.
           </p>
           <div className="mt-8 flex flex-wrap gap-6">
-            <div className="flex items-center gap-3 rounded-2xl border border-preto/10 bg-white/60 px-5 py-4">
+            <div className="flex items-center gap-3 rounded-2xl border border-dourado/30 bg-preto/5 px-5 py-4">
               <div className="flex text-dourado">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <StarIcon key={i} className="size-4" />
@@ -68,7 +68,7 @@ export function About() {
                 <p className="text-xs text-preto/60">{business.reviewCount} avaliações</p>
               </div>
             </div>
-            <div className="flex items-center rounded-2xl border border-preto/10 bg-white/60 px-5 py-4">
+            <div className="flex items-center rounded-2xl border border-verde/25 bg-preto/5 px-5 py-4">
               <p className="text-sm text-preto/75">
                 Presença confirmada no <span className="font-semibold text-preto">Summit Beauty Brasil</span>
               </p>
@@ -78,11 +78,17 @@ export function About() {
 
         <div className="about-media order-1 lg:order-2">
           <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-[3rem] rounded-tr-[7rem] shadow-2xl lg:ml-auto">
-            <img
-              src="/media/hero-02.gif"
-              alt="Penteado ondulado loiro sendo finalizado no Studio19"
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              poster="/media/hero-02-poster.jpg"
+              aria-label="Penteado ondulado loiro sendo finalizado no Studio19"
               className="size-full object-cover"
-            />
+            >
+              <source src="/media/hero-02.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>

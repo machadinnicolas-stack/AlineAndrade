@@ -38,12 +38,17 @@ export function Hero() {
       className="relative flex h-[100svh] min-h-[560px] w-full items-end overflow-hidden bg-preto"
     >
       <div className="hero-media absolute inset-0">
-        {/* Placeholder de referência (GIF pesado) — trocar por vídeo .mp4/.webm comprimido antes do lançamento */}
-        <img
-          src="/media/hero-01.gif"
-          alt="Cliente com cabelo liso e brilhoso, resultado do Studio19"
+        {/* Vídeo de referência (convertido de GIF) — trocar pelo vídeo final da Aline quando ela enviar */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/media/hero-01-poster.jpg"
           className="size-full object-cover"
-        />
+        >
+          <source src="/media/hero-01.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-t from-preto via-preto/40 to-preto/10" />
         <div className="absolute inset-0 bg-gradient-to-r from-preto/70 via-transparent to-preto/30" />
       </div>

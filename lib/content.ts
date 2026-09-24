@@ -106,8 +106,6 @@ export const results: ResultPhoto[] = [
   { src: "/media/resultado-06.png", alt: "Balayage loiro em corte bob ondulado" },
 ];
 
-export const heroVideos = ["/media/hero-01.gif", "/media/hero-02.gif"];
-
 export const course = {
   name: "Curso Liso Perfeito",
   description:

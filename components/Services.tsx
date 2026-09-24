@@ -23,11 +23,11 @@ export function Services() {
   );
 
   return (
-    <section id="servicos" ref={rootRef} className="bg-creme-dark/50 py-24 sm:py-32">
+    <section id="servicos" ref={rootRef} className="bg-verde-fundo py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="max-w-xl">
-          <p className="text-xs uppercase tracking-[0.35em] text-verde">O que fazemos</p>
-          <h2 className="font-display mt-4 text-3xl leading-tight text-preto sm:text-4xl">
+          <p className="text-xs uppercase tracking-[0.35em] text-dourado-claro">O que fazemos</p>
+          <h2 className="font-display mt-4 text-3xl leading-tight text-creme sm:text-4xl">
             Serviços do Studio19
           </h2>
         </div>
@@ -38,14 +38,12 @@ export function Services() {
               key={service.id}
               className={`service-card rounded-[2rem] border p-7 transition-colors ${
                 service.highlight
-                  ? "border-transparent bg-preto text-creme sm:col-span-2 lg:col-span-1 lg:row-span-2"
-                  : "border-preto/10 bg-white/70 text-preto"
+                  ? "border-transparent bg-dourado text-preto sm:col-span-2 lg:col-span-1 lg:row-span-2"
+                  : "border-transparent bg-creme/95 text-preto"
               } ${i % 3 === 1 ? "lg:mt-8" : ""}`}
             >
-              <h3 className={`font-display text-xl ${service.highlight ? "text-dourado-claro" : "text-preto"}`}>
-                {service.label}
-              </h3>
-              <p className={`mt-3 text-sm leading-relaxed ${service.highlight ? "text-creme/75" : "text-preto/65"}`}>
+              <h3 className="font-display text-xl text-preto">{service.label}</h3>
+              <p className={`mt-3 text-sm leading-relaxed ${service.highlight ? "text-preto/70" : "text-preto/65"}`}>
                 {service.description}
               </p>
             </div>

@@ -3,12 +3,12 @@
 :root {
   --preto: #0e0e0d;
   --preto-soft: #18160f;
-  --creme: #faf7f0;
-  --creme-dark: #efe6d3;
+  --creme: #efe2c8;
+  --creme-dark: #e4d2ac;
   --dourado: #c9a35c;
   --dourado-claro: #e3c68a;
   --verde: #3f5c3a;
-  --verde-fundo: #24361f;
+  --verde-fundo: #1c2a18;
   --verde-sage: #93a889;
   --ease-studio: cubic-bezier(0.16, 1, 0.3, 1);
 }
